@@ -1,0 +1,19 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "util function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoweiyxzmd/js-utils.git"
+  },
+  "author": "xiaoweiyxzmd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoweiyxzmd/js-utils/issues"
+  },
+  "homepage": "https://github.com/xiaoweiyxzmd/js-utils#readme"
+}
