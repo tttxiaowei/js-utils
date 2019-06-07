@@ -3,8 +3,7 @@
  */
 exports = module.exports = {
     /**
-     * 根据字符串创建dom
-     * 
+     * @Description         根据字符串创建dom
      * @param {string} str  html字符串
      * @returns {object}    生成的dom
      */
@@ -19,8 +18,7 @@ exports = module.exports = {
 
 
     /**
-     * 压缩图片
-     * 
+     * @Description                 压缩图片
      * @param {object} img          image元素
      * @param {number} theW         生成图片宽
      * @param {number} theH         生成图片高
@@ -74,9 +72,8 @@ exports = module.exports = {
     },
 
     /**
-     * 复制到剪切板
-     * 
-     * @param {string} str 要复制到剪切板的字符串
+     * @Description         复制到剪切板
+     * @param {string} str  要复制到剪切板的字符串
      * @returns
      */
     copyToClipboard(str) {
@@ -95,10 +92,9 @@ exports = module.exports = {
     },
 
     /**
-     * 下载文件
-     * 
-     * @param {string} url      //下载url
-     * @param {string} name     //重命名下载文件
+     * @Description             下载文件
+     * @param {string} url      下载url
+     * @param {string} name     重命名下载文件
      */
     downloadFile(url, name) {
         let oEl = document.createElement('a');
@@ -108,5 +104,4 @@ exports = module.exports = {
         }
         oEl.click();
     },
-
-}
+};

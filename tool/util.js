@@ -3,8 +3,7 @@
  */
 exports = module.exports = {
     /**
-     * 将base64字符串转换为二进制数据
-     * 
+     * @Description         将base64字符串转换为二进制数据
      * @param {string} str  base64字符串
      * @returns {blob}      二进制数据
      */
@@ -20,15 +19,14 @@ exports = module.exports = {
         while (n--) {
             u8arr[n] = bstr.charCodeAt(n);
         }
-        return new Blob([u8arr], { type: mime });
+        return new Blob([u8arr], {type: mime});
     },
 
     /**
-     * 根据id获取对象数组中的对象
-     * 
-     * @param {array} arr
-     * @param {string} id 
-     * @param {string} name 
+     * @Description     根据id获取对象数组中的对象
+     * @param {array}   arr
+     * @param {string}  id
+     * @param {string}  name
      * @returns {object} item
      */
     getItemById(arr, id, name) {
@@ -45,10 +43,9 @@ exports = module.exports = {
     },
 
     /**
-     * 根据'a.b.c'字符串来给o.a.b.c赋值
-     * 
+     * @Description             根据'a.b.c'字符串来给o.a.b.c赋值
      * @param {object} o        要赋值的对象
-     * @param {string} name     属性名字符串   
+     * @param {string} name     属性名字符串
      * @param {any} val         值
      */
     setValByName(o, name, val) {
@@ -65,11 +62,10 @@ exports = module.exports = {
     },
 
     /**
-     * 对arr中的每个对象的name属性求和
-     * 
-     * @param {array} arr 
-     * @param {string} name 
-     * @returns 
+     * @Description     对arr中的每个对象的name属性求和
+     * @param {array}   arr
+     * @param {string}  name
+     * @returns
      */
     sumItems(arr, name) {
         let sum = 0;
@@ -82,9 +78,8 @@ exports = module.exports = {
     },
 
     /**
-     * 数组求和
-     * 
-     * @param {array} arr 
+     * @Description     数组求和
+     * @param {array}   arr
      * @returns
      */
     sumArray(arr) {
@@ -98,13 +93,12 @@ exports = module.exports = {
     },
 
     /**
-     * 格式化url参数
-     * 
-     * @param {string} str   url
-     * @returns {object}    get请求参数列表
+     * @Description             格式化url参数
+     * @param {string} str      url
+     * @returns {object}        get请求参数列表
      */
     getQueryObj(str) {
         str = str.substring(str.indexOf("?") + 1, str.lastIndexOf("#") > -1 ? str.lastIndexOf("#") : str.length);
         return JSON.parse(('{"' + str + '"}').replace(/&/g, '","').replace(/=/g, '":"'));
     },
-}
+};

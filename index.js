@@ -1,6 +1,6 @@
-var util = require('./tool/util.js');
-var dom = require('./tool/dom.js');
-var validate = require('./tool/validate.js');
-exports = module.exports = {
+const util = require('./tool/util.js');
+const dom = require('./tool/dom.js');
+const validate = require('./tool/validate.js');
+module.exports = {
     util, dom, validate
-}
+};
